@@ -6,8 +6,6 @@ import { SessionProvider } from "next-auth/react";
 import "../styles/global.scss";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  console.log(process.env.GITHUB_CLIENT_ID);
-
   return (
     <SessionProvider session={pageProps.session}>
       <Header />
