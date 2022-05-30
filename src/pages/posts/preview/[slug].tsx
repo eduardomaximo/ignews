@@ -21,6 +21,7 @@ interface PostPreviewProps {
 
 export default function PostPreview({ post }: PostPreviewProps) {
   const { data: session } = useSession();
+
   const router = useRouter();
 
   useEffect(() => {
